@@ -7,8 +7,8 @@ import Product from "./components/Product";
 const App = () => {
   return (
     <>
-      <NavBar />
       <SideBar />
+      <NavBar />
       <Recommended />
       <Product />
     </>
