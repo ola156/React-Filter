@@ -1,23 +1,7 @@
 import React from "react";
-import Card from "./Card";
-const Product = () => {
-  return (
-    <div className="ml-[15rem] flex flex-wrap pt-8 gap-7">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </div>
-  );
+
+const Product = ({ product }) => {
+  return <div className="ml-[15rem] flex flex-wrap pt-8 gap-13">{product}</div>;
 };
 
 export default Product;
