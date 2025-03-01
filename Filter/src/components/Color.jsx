@@ -18,25 +18,25 @@ const Color = ({ handleRadioClick }) => {
         </label>
 
         <Input
-          onChange={handleRadioClick}
+          onClick={handleRadioClick}
           value="black"
           title="Black"
           name="test3"
         />
         <Input
-          onChange={handleRadioClick}
+          onClick={handleRadioClick}
           value="blue"
           title="Blue"
           name="test3"
         />
         <Input
-          onChange={handleRadioClick}
+          onClick={handleRadioClick}
           value="red"
           title="Red"
           name="test3"
         />
         <Input
-          onChange={handleRadioClick}
+          onClick={handleRadioClick}
           value="green"
           title="Green"
           name="test3"

@@ -38,10 +38,10 @@ const App = () => {
 
     if (selected) {
       filteredProduct = filteredProduct.filter(
-        ({ category, color, company, newprice, title }) =>
+        ({ category, color, company, newPrice, title }) =>
           category === selected ||
           color === selected ||
-          newprice === selected ||
+          newPrice === selected ||
           company === selected ||
           title === selected
       );

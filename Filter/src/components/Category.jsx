@@ -7,30 +7,31 @@ const Category = ({ handleRadioClick }) => {
       <h2 className="mb-3"> Category</h2>
 
       <div className="flex flex-col ">
-        <label onClick={handleRadioClick} value="" name="test">
-          <input type="radio" /> All
+        <label>
+          <input type="radio" onClick={handleRadioClick} value="" name="test" />{" "}
+          All
         </label>
 
         <Input
-          onChange={handleRadioClick}
+          onClick={handleRadioClick}
           value="sneakers"
           title="Sneakers"
           name="test"
         />
         <Input
-          onChange={handleRadioClick}
-          value="falts"
-          title="Falts"
+          onClick={handleRadioClick}
+          value="flats"
+          title="Flats"
           name="test"
         />
         <Input
-          onChange={handleRadioClick}
+          onClick={handleRadioClick}
           value="sandals"
           title="Sandals"
           name="test"
         />
         <Input
-          onChange={handleRadioClick}
+          onClick={handleRadioClick}
           value="heels"
           title="Heels"
           name="test"

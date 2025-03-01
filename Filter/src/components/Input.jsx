@@ -1,10 +1,10 @@
 import React from "react";
 
-const Input = ({ handleRadioClick, value, title, name }) => {
+const Input = ({ onClick, value, title, name }) => {
   return (
     <label>
       <input
-        onChange={handleRadioClick}
+        onClick={onClick}
         value={value}
         name={name}
         type="radio"
