@@ -1,12 +1,10 @@
 import React from "react";
-import { useState } from "react";
+
 import { CiHeart } from "react-icons/ci";
 import { BsCart3 } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
 
-const NavBar = () => {
-  const [inputVal, setInputVal] = useState("");
-  const handleChange = (e) => {};
+const NavBar = ({ query, handleChange }) => {
   return (
     <nav className="flex px-2 py-3 w-full items-center justify-around z-10 border border-gray-200">
       <div>
@@ -14,7 +12,7 @@ const NavBar = () => {
           type="text"
           className="px-3 py-2 outline-0 border border-gray-200"
           placeholder="Enter Your Search Shoes"
-          value={inputVal}
+          value={query}
           onChange={handleChange}
         />
       </div>

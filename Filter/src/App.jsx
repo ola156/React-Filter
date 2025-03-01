@@ -17,7 +17,8 @@ const App = () => {
   };
   const filteredItems = data.filter(
     (product) =>
-      product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !== 1
+      product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !==
+      -1
   );
 
   // radio filter
@@ -66,7 +67,7 @@ const App = () => {
   return (
     <>
       <SideBar handleRadioClick={handleRadioClick} />
-      <NavBar query={query} />
+      <NavBar query={query} handleChange={handleChange} />
       <Recommended handleButtonClick={handleButtonClick} />
       <Product product={product} />
     </>
